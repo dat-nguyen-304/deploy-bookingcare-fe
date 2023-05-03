@@ -1,0 +1,118 @@
+.home-header-container {
+    height: 78px;
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 1001;
+    box-shadow: 1px 1px #ccc;
+}
+
+.home-header-content {
+    display: flex;
+    width: 100%;
+
+    .left-content {
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            font-size: 25px;
+            color: gray;
+            cursor: pointer;
+
+        }
+
+        .header-logo {
+            background: url('../../assets/logo.svg') center center no-repeat;
+            height: 32px;
+            display: inline-block;
+            width: 50%;
+            cursor: pointer;
+
+        }
+    }
+
+    .center-content {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &-child {
+            .subs-title {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .right-content {
+        width: 25%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .login,
+        .logout {
+            display: flex;
+            align-items: center;
+            color: #333;
+            font-size: 12px;
+
+            i {
+                margin-left: 8px;
+                font-size: 20px;
+                color: #2fc0d7;
+            }
+        }
+
+        .login {
+            cursor: pointer;
+        }
+
+        .logout {
+            img {
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                margin-right: 12px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .language-vi {
+            span {
+                cursor: pointer;
+                opacity: 0.4;
+                color: #000;
+
+                &:hover,
+                &.active {
+                    color: red;
+                    opacity: 1;
+                }
+            }
+
+        }
+
+        .language-en {
+            span {
+                cursor: pointer;
+                opacity: 0.4;
+                color: #000;
+
+                &:hover,
+                &.active {
+                    color: red;
+                    opacity: 1;
+                }
+            }
+
+        }
+    }
+}

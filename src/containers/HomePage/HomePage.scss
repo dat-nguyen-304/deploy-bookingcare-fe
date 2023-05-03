@@ -1,0 +1,191 @@
+.section {
+
+    &.section-specialty {
+        background: #fafafa;
+        margin: 0 12px;
+
+        .specialty-item-container {
+            .specialty-item {
+                margin: 0 12px;
+                cursor: pointer;
+
+                .section-img {
+                    margin: 0;
+                }
+
+                p {
+                    margin: 8px 0 0;
+                    font-size: 14px;
+                    font-weight: lighter;
+                    color: #444;
+                }
+            }
+        }
+    }
+
+    &.section-doctor {
+        background: #fafafa;
+        cursor: pointer;
+
+        .slick-slide {
+            &:hover .section-doctor-img {
+                border: 3px solid #49bce2;
+            }
+
+            &:hover .section-doctor-info .position-fullname {
+                color: #49bce2;
+            }
+
+            padding: 0 10px;
+
+            .section-img-container {
+                border: 1px solid #ccc;
+                height: 200px;
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .section-doctor-img {
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px !important;
+                    background-color: #fff;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                }
+
+                .section-doctor-info {
+                    p {
+                        margin: 8px 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    &.section-about {
+        .section-content {
+            display: flex;
+            align-items: center;
+
+            .section-video {
+                flex: 1;
+                padding: 0 40px;
+
+                iframe {
+                    width: 100%;
+                    height: 350px;
+                }
+            }
+
+            .section-about-description {
+                flex: 1;
+                font-size: 18px;
+                text-align: justify;
+                padding: 0 40px;
+                font-style: italic;
+                font-weight: 300;
+                color: #888;
+            }
+        }
+    }
+
+    .section-content {
+        padding: 40px 0 60px;
+        width: calc(100% - 100px);
+        margin: 0 auto;
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 14px;
+            position: relative;
+            height: 48px;
+            margin: 0 12px 14px;
+
+            .section-title {
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: .5px;
+                color: #333;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+
+            .section-button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 12px;
+                display: block;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 8px 12px;
+                background-color: #eee;
+                color: #666;
+            }
+        }
+
+        .section-img {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 160px;
+            margin: 0 12px;
+        }
+
+        .slick-slider {
+            .slick-list {}
+
+            .slick-prev {
+                width: 44px;
+                height: 48px;
+                z-index: 1000;
+                left: -16px;
+                background-color: #fafafa;
+                border: 2px solid #ccc;
+
+                &:before {
+                    font-family: "Font Awesome";
+                    color: red;
+                    font-weight: 900;
+                }
+
+                &:hover {
+                    background-color: #ededed;
+                }
+            }
+
+            .slick-next {
+                width: 44px;
+                height: 48px;
+                z-index: 1000;
+                right: -16px;
+                background-color: #fafafa;
+                border: 2px solid #ccc;
+
+                &:before {
+                    font-family: "Font Awesome";
+                    color: red;
+                }
+
+                &:hover {
+                    background-color: #ededed;
+                }
+            }
+
+            .slick-dots {
+                display: none !important;
+            }
+
+            .slick-disabled {
+                display: none !important;
+            }
+        }
+    }
+
+}

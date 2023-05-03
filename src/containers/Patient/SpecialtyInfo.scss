@@ -1,0 +1,45 @@
+.specialty-info {
+    position: relative;
+    padding: 0 160px;
+
+    .specialty-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0.2;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    #show-hide {
+        display: none;
+
+        &:checked~.specialty-content {
+            height: auto;
+            transition: all linear 2.5s;
+        }
+
+        &~.specialty-content {
+            height: 120px;
+            transition: all linear 2.5s;
+        }
+    }
+
+    .show-hide-button {
+
+        label {
+            cursor: pointer;
+            color: blue;
+            padding: 12px 0;
+        }
+    }
+
+    .specialty-content {
+        color: #444;
+        padding-top: 16px;
+        overflow: hidden;
+    }
+}

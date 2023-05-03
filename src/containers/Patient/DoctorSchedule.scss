@@ -1,0 +1,62 @@
+.doctor-schedule {
+    .select-day {
+        width: 50%;
+    }
+
+    .schedule-title {
+        margin-top: 20px;
+
+        i {
+            margin-right: 8px;
+        }
+    }
+
+    .schedule-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+        height: 100px;
+
+        .schedule-en,
+        .schedule-vi {
+            border: 3px solid #fff04b;
+            width: 22%;
+            font-weight: 700;
+            margin: 6px 1%;
+            line-height: 36px;
+            height: 42px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #fff04b;
+            color: #444;
+            border-radius: 4px;
+
+            &:hover {
+                border: 3px solid #45c3d2;
+            }
+        }
+
+        .no-schedule {
+            color: red;
+            font-style: italic;
+        }
+
+        .schedule-en {
+            font-size: 11px;
+        }
+
+        .schedule-vi {
+            font-size: 14px;
+        }
+    }
+
+    .book-schedule-text {
+        i {
+            margin-right: 4px;
+            color: #333;
+        }
+
+        color: #666;
+        font-style: italic;
+    }
+}

@@ -1,0 +1,95 @@
+.home-header-banner {
+    background: url('../../assets/header-background.jpg') bottom center no-repeat;
+    background-size: cover;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+
+    .content-up {
+        flex: 1;
+
+        .title1 {
+            font-size: 30px;
+            color: #fff;
+            text-shadow: 1px 1px 1px #333;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .title2 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #fff;
+            text-shadow: 1px 1px 1px #333;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            width: 480px;
+            padding: 12px 0;
+            border-radius: 32px;
+            background-color: #f7d800;
+
+            i {
+                font-size: 16px;
+            }
+
+            input {
+                width: 80%;
+                outline: none;
+                border: none;
+                background: transparent;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .content-down {
+        flex: 1;
+        position: relative;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+
+        .options {
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            bottom: 100px;
+            left: 80px;
+            right: 80px;
+
+            .option-item {
+
+                .option-img-bg {
+                    margin: 0 auto;
+                    background-color: #fff;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 1px 1px #999;
+
+                    .option-img {
+                        height: 32px;
+                        width: 32px;
+                        background-size: contain;
+                    }
+                }
+
+                .option-title {
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}

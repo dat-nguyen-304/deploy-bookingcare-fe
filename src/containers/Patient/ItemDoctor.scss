@@ -1,0 +1,68 @@
+.doctor-item {
+    display: flex;
+    margin: 16px 0;
+    align-items: flex-start;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px #ccc;
+
+    .no-doctor {
+        display: block;
+        padding: 12px 0;
+        margin: 0 auto 130px;
+        color: red;
+    }
+
+    .intro-doctor-container {
+        flex: 1;
+
+        .doctor-intro {
+            margin: 0;
+            padding: 16px 16px 8px;
+            cursor: pointer;
+
+            .doctor-name {
+                font-size: 16px;
+            }
+
+            .doctor-description {
+                font-size: 13px;
+            }
+
+            &~.no-doctor {
+                display: none;
+            }
+        }
+
+        .doctor-info {
+            padding: 20px 16px;
+
+            .address-title,
+            .clinic,
+            .address-content,
+            .price-title,
+            .price-note,
+            .payment-method {
+                font-size: 13px;
+            }
+        }
+
+    }
+
+    .doctor-schedule-container {
+        flex: 1;
+        padding: 20px 16px;
+        border-left: 1px solid #ccc;
+    }
+
+    .schedule-en,
+    .schedule-vi {
+        height: 36px !important;
+        border: none !important;
+        cursor: default;
+
+        &:hover {
+            border: none !important;
+            cursor: default;
+        }
+    }
+}

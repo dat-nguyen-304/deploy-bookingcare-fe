@@ -1,0 +1,16 @@
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+    z-index: 10000 !important;
+}
+
+.upload-img-container {
+
+    .upload-img-preview.modal-send-invoice {
+        height: 200px !important;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .upload-img {
+        width: 160px !important;
+    }
+}

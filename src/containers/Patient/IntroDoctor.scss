@@ -1,0 +1,30 @@
+.doctor-intro {
+    margin: 78px 200px 0;
+    display: flex;
+    padding: 24px 0;
+
+    .doctor-avatar {
+        width: 120px;
+        height: 120px;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 50%;
+    }
+
+    .doctor-intro-text {
+        flex: 1;
+        margin-left: 20px;
+
+        .doctor-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .doctor-description {
+            color: #666;
+            font-size: 14px;
+            font-weight: 100;
+        }
+    }
+}

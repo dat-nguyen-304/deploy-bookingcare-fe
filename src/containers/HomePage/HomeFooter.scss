@@ -1,0 +1,26 @@
+.home-footer {
+    height: 80px;
+    padding: 10px 10%;
+    background-color: #64b9e5;
+    display: flex;
+    justify-content: space-between;
+
+    &-left {
+        color: #fff;
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    &-right {
+        font-size: 30px;
+
+        .facebook-link {
+            color: #3c579e;
+            margin-right: 12px;
+        }
+
+        .youtube-link {
+            color: #cc191e;
+        }
+    }
+}

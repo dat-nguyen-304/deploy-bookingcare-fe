@@ -1,0 +1,81 @@
+.address-title {
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.clinic {
+    margin: 8px 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.address-content {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.price {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #ccc;
+
+    .price-title {
+        color: #666;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 15px;
+
+    }
+
+    .price-number {
+        font-size: 14px;
+        font-weight: 100;
+        margin-left: 8px;
+    }
+
+}
+
+.price-detail-table {
+    background-color: #eee;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 8px;
+
+    .price-number-line {
+        display: flex;
+        justify-content: space-between;
+
+        .price-title {
+            color: #666;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 15px;
+
+        }
+
+        .price-number {
+            font-size: 14px;
+            font-weight: 100;
+        }
+    }
+
+    .price-note {
+        margin: 4px 0;
+    }
+
+    .payment-method {
+        border-top: 1px solid #aaa;
+        padding-top: 8px;
+        margin: 0;
+    }
+}
+
+.see-more {
+    margin-top: 8px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}

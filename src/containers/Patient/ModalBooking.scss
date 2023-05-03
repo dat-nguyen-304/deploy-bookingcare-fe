@@ -1,0 +1,98 @@
+.modal-header-container {
+    padding: 16px 20px;
+    background-color: #eee !important;
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    font-weight: 700;
+    font-size: 16px;
+
+    i {
+        font-size: 20px;
+        color: red;
+        cursor: pointer;
+    }
+}
+
+.modal-body {
+    padding: 6px 24px;
+
+    label {
+        margin-top: 16px;
+    }
+
+    .doctor-intro {
+        margin: 12px 0 0;
+        padding: 0;
+        display: flex;
+
+        .doctor-img {
+            display: block;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .doctor-intro-text {
+            .doctor-name {
+                font-size: 18px;
+            }
+
+            .doctor-description {
+                font-size: 13px;
+                margin-top: 4px;
+            }
+
+            .date-and-time {
+                margin-top: 2px;
+                color: red;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .price {
+        font-weight: 700;
+        font-size: 14px;
+        margin-top: 12px;
+        padding-top: 12px;
+    }
+}
+
+.modal-footer {
+    border-top: none;
+
+    .button-confirm {
+        padding: 6px 20px;
+        background-color: #fff04b;
+        cursor: pointer;
+        margin-right: 12px;
+    }
+
+    .button-cancel {
+        padding: 6px 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+}
+
+.modal-booking-loading {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(#000, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+}
